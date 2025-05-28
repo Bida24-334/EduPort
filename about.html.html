@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bida24-334
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+
+
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Index.html"><img src="eduport_img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html.html">COURSE</a></li>
+                    <li><a href="blog.html.html">BLOG</a></li>
+                    <li><a href="contact.html.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+     <h1>About Us</h1> 
+
+    </section>
+
+<!----about us content-->
+ <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are a globally recognized University of Computing</h1>
+            <p>Established since 2006, EduPort has produced the leading minds in Computing and Technology. With 150 bachelors' degrees and 75 masters' degrees programmes recognized and credible in over 100 countries, we are now deemed the second best institution of computing internationally.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="eduport_img/about.jpg">
+        </div>
+    </div>
+
+ </section>
+<section class="footer">
+    <h4>About us</h4>
+    <p>To know more about us, find us at:</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+    </div>
+  
+   
+  
+    <p> Made by bida24-334 </p> <span id="spanYear"></span>
+</section>
+
+
+
+
+<!---JavaScript for Year-->
+
+   <script>
+   document.getElementById('spanYear').innerHTML = new Date().getFullYear();
+   </script>
+
+
+
+
+     <!------JavaScript for Toggle Menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){ 
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+
+</body>
+</html>

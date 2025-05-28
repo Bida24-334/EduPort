@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bida24-334  
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+
+
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Index.html"><img src="eduport_img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                   <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html.html">COURSE</a></li>
+                    <li><a href="blog.html.html">BLOG</a></li>
+                    <li><a href="contact.html.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+     <h1>Programmes for 2025/2026</h1> 
+
+    </section>
+
+  
+   <!---blog page content-->
+   <section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="eduport_img/certificate.jpg">
+            <h2> Certificates and Programmes for 2025</h2>
+            <p>Our institution offers cutting-edge undergraduate computing programs designed to equip students with in-demand technical skills. The 2025/2026 academic year features programs in Computer Science, Software Engineering, Cybersecurity, and Data Science, each with specialized tracks. These programs combine theoretical foundations with hands-on projects, preparing graduates for thriving careers in the tech industry through our industry-aligned curriculum</p>
+            <br><p>To apply for our computing programs, applicants must have completed secondary education with strong grades in mathematics and science subjects. The application process involves submitting an online form through our portal, including academic transcripts, a personal statement, and one academic reference. International students must additionally provide proof of English proficiency through IELTS or TOEFL scores, with applications closing on January 31, 2026 for the September intake.</p>
+            <br><p>We offer multiple convenient payment options for course registration including online credit/debit card payments through our secure portal. Bank transfers are accepted with detailed account information available on our website, and installment plans can be arranged through our finance office. Cash payments may be made in person at our campus bursary during working hours, with all payment deadlines strictly enforced to maintain enrollment status.</p>
+        
+        <div class="comment-box">
+
+            <h3>Leave A Comment</h3>
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your Comment">
+                </textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+
+        </div>
+        
+        </div>
+        <div class="blog-right">
+            <h3>Undergraduate courses</h3>
+            <div>
+                <span>Business Intelligence and Data Analytics</span>
+                <span>19</span>
+            </div>
+            <div>
+                <span>Information Communication Technology</span>
+                <span>20</span>
+            </div>
+            <div>
+                <span>Network Computing</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span> Applied Business Computing</span>
+                <span>22</span>
+            </div>
+        </div>
+    </div>
+
+
+   </section>
+
+
+<!--Footer-->  
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>To know more about us, find us at:</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+    </div>
+    <p> Made by bida24-334 </p> <span id="spanYear"></span>
+</section>
+
+
+
+
+<!---JavaScript for Year-->
+
+   <script>
+   document.getElementById('spanYear').innerHTML = new Date().getFullYear();
+   </script>
+
+
+
+
+     <!------JavaScript for Toggle Menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){ 
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+
+</body>
+</html>
