@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bida24-334
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Index.html"><img src="eduport_img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html.html">COURSE</a></li>
+                    <li><a href="blog.html.html">BLOG</a></li>
+                    <li><a href="contact.html.html">CONTACT</a></li>
+                    <li><a href="feedback.html.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+     <h1>Feedback</h1>
+      
+
+    </section>
+
+<!---feedback content-->
+ <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-custom-red text-white">
+                        <h3>Feedback Form</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="https://formsubmit.co/bida24@thuto.bac.ac.bw" method="POST">
+                            <!-- Add a hidden input for the redirect page -->
+                            <input type="hidden" name="https://bida24-334.github.io/EduPort/feedback.html.html" value="https://bida24-334.github.io/EduPort/feedback.html.html">
+                            <input type="hidden" name="_subject" value="New Feedback Submission">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="feedbackType" class="form-label">Feedback Type</label>
+                                <select class="form-select" id="feedbackType" name="feedbackType">
+                                    <option value="general">General Feedback</option>
+                                    <option value="bug">Bug Report</option>
+                                    <option value="feature">Feature Request</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="hero-btn red-btn">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+<!---footer-->
+<section class="footer">
+    <h4>About us</h4>
+    <p>To know more about us, find us at:</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+    </div>
+  
+
+  
+    <p> Made by bida24-334 </p> <span id="spanYear"></span>
+</section>
+
+
+
+
+<!---JavaScript for Year-->
+
+   <script>
+   document.getElementById('spanYear').innerHTML = new Date().getFullYear();
+   </script>
+
+
+
+
+     <!------JavaScript for Toggle Menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){ 
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+
+</body>
+</html>https://bida24-334.github.io/
