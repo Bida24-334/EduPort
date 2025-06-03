@@ -526,3 +526,6 @@ h3{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.bg-custom-red {
+    background-color: #f44336 !important;
+}
